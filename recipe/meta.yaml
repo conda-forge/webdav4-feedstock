@@ -24,7 +24,7 @@ requirements:
     - setuptools-scm
     - setuptools-scm ==6.0.1
   run:
-    - httpx >=0.17.0
+    - httpx >=0.18.2
     - python >=3.6
     - python-dateutil >=2.8.1
     - fsspec ==2021.7.0
