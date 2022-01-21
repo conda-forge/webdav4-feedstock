@@ -1,5 +1,5 @@
 {% set name = "webdav4" %}
-{% set version = "0.9.3" %}
+{% set version = "0.9.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/webdav4-{{ version }}.tar.gz
-  sha256: 0d1e29f743def2c2ae2aab5e152757e1d8bfacfd7b7985764824308ebde1ff29
+  sha256: e59e582464bce7f16dcd8b67149c64a83b4c30297155148a7558d310972c648f
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
     - setuptools-scm >=6.3.1
   run:
-    - httpx ==0.20.0
+    - httpx >=0.20.0,<1.0.0
     - python >=3.6
     - python-dateutil >=2.8.1
     - fsspec >=2021.7.0
