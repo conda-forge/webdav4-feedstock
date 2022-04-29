@@ -1,5 +1,5 @@
 {% set name = "webdav4" %}
-{% set version = "0.9.6" %}
+{% set version = "0.9.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/webdav4-{{ version }}.tar.gz
-  sha256: f890c2016cd5e7ded994fa21374b6f6db7ea653dd01a190ede9fc6ff74f5bf92
+  sha256: 352db25e62d82c30bb3e71fdc2e932b2f8394fadb5f7405140aecda4c47c22ee
 
 build:
   number: 0
