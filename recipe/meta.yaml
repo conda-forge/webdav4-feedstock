@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/webdav4-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/webdav4-{{ version }}.tar.gz
   sha256: 387da6f0ee384e77149dddd9bcfd434afa155882f6c440a529a7cb458624407f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - dav = webdav4.cli:main
@@ -20,12 +20,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - hatchling >=1.9.0
     - hatch-vcs
   run:
     - httpx >=0.20.0,<1.0.0
-    - python >=3.7
+    - python >={{ python_min }}
     - python-dateutil >=2.8.1
     - fsspec >=2021.7.0
 
@@ -37,6 +37,7 @@ test:
     - dav --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/skshetry/webdav4
