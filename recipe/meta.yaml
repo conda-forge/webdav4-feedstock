@@ -1,5 +1,5 @@
 {% set name = "webdav4" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/webdav4-{{ version }}.tar.gz
-  sha256: 387da6f0ee384e77149dddd9bcfd434afa155882f6c440a529a7cb458624407f
+  sha256: 7062c6640e0520bfbd49862bdd335db839e519bf2ca02cd4f89957069ed600ea
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - dav = webdav4.cli:main
